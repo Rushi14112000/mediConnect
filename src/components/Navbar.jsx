@@ -4,7 +4,7 @@ const Navbar = (props) => {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <NavLink className="navbar-brand" to="/">MediConnect</NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -15,6 +15,9 @@ const Navbar = (props) => {
                         </li>
                         <li className="nav-item">
                             <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/about">{props.about}</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/about">ContactUs</NavLink>
                         </li>
                         <li className="nav-item dropdown"><a className="nav-link dropdown-toggle"
                             href="#"
@@ -28,8 +31,18 @@ const Navbar = (props) => {
                                         Student Details
                                     </NavLink>
                                 </li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                <li><a className="dropdown-item" href="#">Hosp Login</a></li>
+                                <li><a className="dropdown-item" href="#">Hosp Reg</a></li>
+                            </ul>
+                        </li>
+                        <li className="nav-item dropdown"><a className="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">{props.dropdown}</a>
+                            <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="#">Doc Login</a></li>
+                                <li><a className="dropdown-item" href="#">Doc Reg</a></li>
                             </ul>
                         </li>
                     </ul>
