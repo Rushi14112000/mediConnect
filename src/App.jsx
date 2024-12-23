@@ -42,8 +42,6 @@ function App() {
         <Mul a={10} b={5} />
         <Subtraction a={10} b={5} />
       </div>
-
-
     </>
   )
 }
