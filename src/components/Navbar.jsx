@@ -23,14 +23,8 @@ const Navbar = (props) => {
                             href="#"
                             role="button"
                             data-bs-toggle="dropdown"
-                            aria-expanded="false">{props.dropdown}</a>
+                            aria-expanded="false">Hospital</a>
                             <ul className="dropdown-menu">
-                                <li>
-                                    <NavLink
-                                        className={({ isActive }) => isActive ? "dropdown-item active" : "dropdown-item"} to="/StudDetails">
-                                        Student Details
-                                    </NavLink>
-                                </li>
                                 <li><a className="dropdown-item" href="#">Hosp Login</a></li>
                                 <li><a className="dropdown-item" href="#">Hosp Reg</a></li>
                             </ul>
@@ -39,7 +33,7 @@ const Navbar = (props) => {
                             href="#"
                             role="button"
                             data-bs-toggle="dropdown"
-                            aria-expanded="false">{props.dropdown}</a>
+                            aria-expanded="false">Doctor</a>
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="#">Doc Login</a></li>
                                 <li><a className="dropdown-item" href="#">Doc Reg</a></li>
